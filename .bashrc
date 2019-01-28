@@ -73,3 +73,4 @@ alias df="df -H"
 alias cc="pkill -2 -P $(echo $$)"
 alias git?="git rev-parse --is-inside-work-tree"
 alias \ps=ps
+alias getip="sh /Users/mikemuponda/bin/py/getip.sh"
