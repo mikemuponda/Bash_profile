@@ -18,6 +18,7 @@ if ((nrPrcss==0)) && (($termsOpen==1)); then
 fswatch -o -l 43200 /Users/mikemuponda/bin | xargs -n1 -I{} sh ScriptManager.sh &
 PID=$(jobs -l | grep fswatch | cut -c 7-10)
 echo PID IS:$PID
+disown -h $PID
 fi
 
 #Terminal windows julia start
