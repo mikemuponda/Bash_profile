@@ -9,6 +9,12 @@ export CPPFLAGS="-I/usr/local/opt/qt/include"
 export LOGNAME=mike
 export HISTSIZE=500
 
+#SOURCE SPACE
+source ~/.iterm2_shell_integration.bash
+source /Users/mikemuponda/bin/py/penv/bin/activate
+
+
+
 #fswatch -0 -l 5 --timestamp ~/.git &
 termsOpen=$(who | grep 'ttys' | wc -l)
 
