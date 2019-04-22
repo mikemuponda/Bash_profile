@@ -4,6 +4,7 @@ export PATH=$PATH:$HOME/bin
 export PATH=$PATH:/Users/mikemuponda/bin
 export PATH=/usr/local/gcc-8.1/bin:$PATH
 export PATH="/usr/local/opt/qt/bin:$PATH"
+export HOMEBREW_FORCE_BREWED_CURL=1
 export LDFLAGS="-L/usr/local/opt/qt/lib"
 export CPPFLAGS="-I/usr/local/opt/qt/include"
 export LOGNAME=mike
@@ -20,10 +21,6 @@ PID=$(jobs -l | grep fswatch | cut -c 7-10)
 echo PID IS:$PID
 fi
 
-#Terminal windows julia start
-if (($termsOpen==3)); then
-    exec '/Applications/Julia-1.0.app/Contents/Resources/julia/bin/julia'
-fi
 
 app(){
  pushd /etc >&-
