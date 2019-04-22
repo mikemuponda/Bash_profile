@@ -9,12 +9,6 @@ export CPPFLAGS="-I/usr/local/opt/qt/include"
 export LOGNAME=mike
 export HISTSIZE=500
 
-#SOURCE SPACE
-source ~/.iterm2_shell_integration.bash
-source /Users/mikemuponda/bin/py/penv/bin/activate
-
-
-
 #fswatch -0 -l 5 --timestamp ~/.git &
 termsOpen=$(who | grep 'ttys' | wc -l)
 
@@ -24,7 +18,6 @@ if ((nrPrcss==0)) && (($termsOpen==1)); then
 fswatch -o -l 43200 /Users/mikemuponda/bin | xargs -n1 -I{} sh ScriptManager.sh &
 PID=$(jobs -l | grep fswatch | cut -c 7-10)
 echo PID IS:$PID
-disown -h $PID
 fi
 
 #Terminal windows julia start
@@ -68,6 +61,7 @@ alias prev="!$"
 alias keystrokes="open https://eastmanreference.com/complete-list-of-applescript-key-codes"
 alias julia="exec '/Applications/Julia-1.0.app/Contents/Resources/julia/bin/julia'"
 alias cheatsheet="links https://devhints.io/bash#conditionals"
+alias ps="ptxs -ax"
 alias wifi="open https://www.redbooks.ibm.com/redbooks/pdfs/gg243376.pdf"
 alias c++="open http://www.cplusplus.com/doc/tutorial/"
 alias drive="open -a '/Applications/Safari Technology Preview.app' https://drive.google.com/drive/u/1/my-drive"
@@ -79,5 +73,3 @@ alias du="du -h"
 alias df="df -H"
 alias cc="pkill -2 -P $(echo $$)"
 alias git?="git rev-parse --is-inside-work-tree"
-alias \ps=ps
-alias getip="sh /Users/mikemuponda/bin/py/getip.sh"
