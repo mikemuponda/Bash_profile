@@ -2,6 +2,7 @@ export PATH=$PATH:~/.android-sdk-macosx/platform-tools/
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:/Users/mikemuponda/bin
+export PATH=$PATH:/Users/mikemuponda/Project/flutter/bin
 export PATH=/usr/local/gcc-8.1/bin:$PATH
 export PATH="/usr/local/opt/qt/bin:$PATH"
 export HOMEBREW_FORCE_BREWED_CURL=1
