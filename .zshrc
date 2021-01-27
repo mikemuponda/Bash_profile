@@ -59,9 +59,10 @@ app(){
  popd >&-
 }
 
+alias gg="git " 
 alias oo="osascript -e 'tell application "iTerm" to set visible of front window to false' "
 alias o="gedit ~/.zshrc && echo OPEN "
-alias s="source ~/.zshrc && echo CLOSED"
+alias sauce="source ~/.zshrc && echo CLOSED"
 alias push="git push"
 alias subl="sublime"
 alias txt="open -e"
